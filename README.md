@@ -3,7 +3,7 @@
 
 ## Install
 ```sh
-$ git clone git://github.com/physalix/node-express3-mvc.git
+$ git clone git@github.com:flasomm/tennis-player-stats.git
 $ npm install
 ```
 
