@@ -1,0 +1,25 @@
+{
+  "name": "tennis-player-stats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require babel-register tests/*.js --exit",
+    "start": "export NODE_ENV=dev; node index.js"
+  },
+  "author": "Fabrice Sommavilla",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^6.2.0"
+  },
+  "dependencies": {
+    "babel-register": "^6.26.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "chalk": "^2.4.2",
+    "config": "^3.2.2",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  }
+}
