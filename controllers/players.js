@@ -39,7 +39,12 @@ exports.delete = (req, res) => {
         return res.status(404).json({message: `Player ${req.params.id} not found`});
     }
     dataFilePath.players.splice(removeIndex, 1);
-    fs.writeFileSync(`${path.resolve(__dirname)}/../data/headtohead.json`, JSON.stringify(dataFilePath));
+
+    try {
+        fs.writeFileSync(`${path.resolve(__dirname)}/../data/headtohead.json`, JSON.stringify(dataFilePath));
+    } catch (err) {
+        return res.status(500).json({message: `Error writing data ${err}`});
+    }
 
     res.send(`Player ${req.params.id} deleted with success`);
 };
