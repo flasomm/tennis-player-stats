@@ -7,9 +7,6 @@ const fs = require('fs');
 const path = require('path');
 const dataFilePath = require('../data/headtohead.json');
 
-
-console.log(dataFilePath);
-
 /**
  * GET /players
  * Get all players.
