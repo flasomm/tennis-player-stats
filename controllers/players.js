@@ -5,10 +5,11 @@
 
 const fs = require('fs');
 const path = require('path');
+const dataFilePath = `${path.resolve(__dirname)}/../data/headtohead.json`;
 
 const readData = () => {
     return new Promise((resolve, reject) => {
-        fs.readFile(`${path.resolve(__dirname)}/../data/headtohead.json`, 'utf8', (err, content) => {
+        fs.readFile(dataFilePath, 'utf8', (err, content) => {
             if (err) {
                 reject(err)
             } else {
@@ -63,7 +64,7 @@ exports.delete = (req, res) => {
                 return res.status(404).json({message: `Player ${req.params.id} not found`});
             }
             data.players.splice(removeIndex, 1);
-            fs.writeFileSync(`${path.resolve(__dirname)}/../data/headtohead.json`, JSON.stringify(data));
+            fs.writeFileSync(dataFilePath, JSON.stringify(data));
 
             res.send(`Player ${req.params.id} deleted with success`);
         })
