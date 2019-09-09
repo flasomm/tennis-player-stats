@@ -12,7 +12,7 @@ $ npm i
 $ npm start
 ```
 
-## Test
+## Test project
 ```sh
 $ npm test
 ```
