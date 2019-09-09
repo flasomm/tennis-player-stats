@@ -5,7 +5,6 @@
 
 const express = require('express');
 const bodyParser = require('body-parser');
-const logger = require('morgan');
 const chalk = require('chalk');
 const errorHandler = require('errorhandler');
 const config = require('config');
@@ -20,7 +19,6 @@ const app = express();
  */
 app.set('host', config.host || '0.0.0.0');
 app.set('port', config.port || 8080);
-app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 

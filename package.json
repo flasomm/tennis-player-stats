@@ -10,16 +10,15 @@
   "author": "Fabrice Sommavilla",
   "license": "ISC",
   "devDependencies": {
-    "mocha": "^6.2.0"
-  },
-  "dependencies": {
+    "mocha": "^6.2.0",
     "babel-register": "^6.26.0",
     "chai": "^4.2.0",
-    "chai-http": "^4.3.0",
+    "chai-http": "^4.3.0"
+  },
+  "dependencies": {
     "chalk": "^2.4.2",
     "config": "^3.2.2",
     "errorhandler": "^1.5.1",
-    "express": "^4.17.1",
-    "morgan": "^1.9.1"
+    "express": "^4.17.1"
   }
 }
