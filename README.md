@@ -4,7 +4,7 @@
 ## Install
 ```sh
 $ git clone git@github.com:flasomm/tennis-player-stats.git
-$ npm install
+$ npm i
 ```
 
 ## Start project
