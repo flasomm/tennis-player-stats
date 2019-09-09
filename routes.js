@@ -8,8 +8,6 @@ const {players} = require('./controllers');
 
 const routes = express.Router();
 
-console.log(players);
-
 routes.get('/players', players.getAll);
 routes.get('/players/:id', players.getById);
 routes.delete('/players/:id', players.delete);
