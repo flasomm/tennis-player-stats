@@ -1,5 +1,4 @@
 /**
- * TestEurosport 2019.
  * @author  Fabrice Sommavilla <fs@physalix.com>
  * @date    09/09/2019
  */
