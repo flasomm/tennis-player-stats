@@ -10,7 +10,7 @@
   "author": "Fabrice Sommavilla",
   "license": "ISC",
   "devDependencies": {
-    "mocha": "^6.2.0",
+    "mocha": "^6.2.3",
     "babel-register": "^6.26.0",
     "chai": "^4.2.0",
     "chai-http": "^4.3.0"
